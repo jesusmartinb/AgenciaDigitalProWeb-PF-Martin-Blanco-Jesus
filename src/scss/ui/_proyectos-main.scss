@@ -1,0 +1,200 @@
+@use '../custom' as *;
+@use '../utils/mixins' as m;
+@use '../utils/maps' as map;
+
+.gallery-item {
+	position: relative;
+	display: inline-block;
+	margin-bottom: $font-size-base * 2;
+	overflow: hidden;
+	vertical-align: top;
+	border-radius: 5px;
+	box-shadow: 3px 3px 6px $dark;
+	opacity: 1;
+	transition: opacity 0.3s;
+
+	&:hover {
+		.gallery-item__image {
+			opacity: 0.6;
+		}
+
+		.gallery-item__body {
+			bottom: 0;
+		}
+	}
+	
+	@include media-breakpoint-up(md) {
+		.gallery-item__image {
+			visibility: hidden;
+		}
+	}
+}
+
+.gallery-item__media {
+	top: 0;
+	left: 0;
+	width: 100%;
+	line-height: 0;
+}
+
+.gallery-item__image {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	border: none;
+	border-radius: 5px;
+}
+
+.gallery-item__body {
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	width: 100%;
+	color: map-get($colors, light);
+	background: map-get(map.$blackscale, negro-70) none repeat scroll 0 0;
+	transition: all .5s ease 0s;
+}
+
+.gallery-item__copy {
+	margin: 0.3rem 0;
+	padding-left: $font-size-base * 0.5;
+	font-size: $font-size-base;
+	text-align: left;
+
+}
+
+.gallery-item__subtitle {
+	margin: 0.3rem 0;
+	padding: 0 10px 5px;
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: $font-size-base * 0.9;
+	text-align: left;
+}
+
+.gallery-item__title {
+	margin: 0.3rem 0;
+	font-family: Georgia, 'Times New Roman', serif;
+}
+
+.gallery-item__title-link {
+	margin: 0.3rem 0;
+	display: block;
+	padding: 1rem 2rem 1rem 1rem;
+	font-size: $font-size-base * 1.2;
+	color: map-get($colors, light);
+	text-align: left;
+	text-decoration: none;
+
+	&:hover {
+		color: map-get($colors, light);
+	}
+}
+
+.webp {
+	#proyectos {
+		@include media-breakpoint-up(md) {
+			.hijo1 {
+				@include m.bgImage('../../assets/img/galeria1.webp', transparent);
+			}
+			
+			.hijo2 {
+				@include m.bgImage('../../assets/img/galeria2.webp', transparent);
+			}
+	
+			.hijo3 {
+				@include m.bgImage('../../assets/img/galeria3.webp', transparent);
+			}
+	
+			.hijo4 {
+				@include m.bgImage('../../assets/img/galeria4.webp', transparent);
+			}
+	
+			.hijo5 {
+				@include m.bgImage('../../assets/img/galeria5.webp', transparent);
+			}
+	
+			.hijo6 {
+				@include m.bgImage('../../assets/img/galeria6.webp', transparent);
+			}
+	
+			.hijo7 {
+				@include m.bgImage('../../assets/img/galeria7.webp', transparent);
+			}
+		}
+	}
+}
+
+.no-webp {
+	#proyectos {
+		@include media-breakpoint-up(md) {
+			.hijo1 {
+				@include m.bgImage('../../assets/img/galeria1.jpg', transparent);
+			}
+			
+			.hijo2 {
+				@include m.bgImage('../../assets/img/galeria2.jpg', transparent);
+			}
+	
+			.hijo3 {
+				@include m.bgImage('../../assets/img/galeria3.jpg', transparent);
+			}
+	
+			.hijo4 {
+				@include m.bgImage('../../assets/img/galeria4.jpg', transparent);
+			}
+	
+			.hijo5 {
+				@include m.bgImage('../../assets/img/galeria5.jpg', transparent);
+			}
+	
+			.hijo6 {
+				@include m.bgImage('../../assets/img/galeria6.jpg', transparent);
+			}
+	
+			.hijo7 {
+				@include m.bgImage('../../assets/img/galeria7.jpg', transparent);
+			}
+		}
+	}
+}
+
+#proyectos {
+	@include media-breakpoint-up(md) {
+		.gallery-container {
+			grid-template-areas: 
+				"hijo1 hijo1 hijo2"
+				"hijo1 hijo1 hijo3"
+				"hijo5 hijo6 hijo3"
+				"hijo5 hijo6 hijo4"
+				"hijo7 hijo7 hijo7";
+		}
+
+		.hijo1 {
+			grid-area: hijo1;
+		}
+		
+		.hijo2 {
+			grid-area: hijo2;
+		}
+
+		.hijo3 {
+			grid-area: hijo3;
+		}
+
+		.hijo4 {
+			grid-area: hijo4;
+		}
+
+		.hijo5 {
+			grid-area: hijo5;
+		}
+
+		.hijo6 {
+			grid-area: hijo6;
+		}
+
+		.hijo7 {
+			grid-area: hijo7;
+		}
+	}
+}

@@ -1,0 +1,46 @@
+@use '../custom' as *;
+
+
+// Añadir variables de color en mapas
+$blackscale: (
+  "negro-10": $black-10,
+  "negro-35": $black-35,
+  "negro-55": $black-55,
+  "negro-70": $black-70,
+  "negro": $dark,
+);
+
+$colors: (
+  "light": $light,
+  "primary": $primary,
+  "secondary": $secondary,
+  "info": $info,
+  "danger": $danger,
+  "warning": $warning,
+  "success": $success,
+);
+
+// Funciones para generar clases para cada color de los mapas
+@each $name, $value in $blackscale {
+  .bgc-#{$name} {
+    background-color: $value;
+  }
+}
+
+@each $name, $value in $blackscale {
+  .color-#{$name} {
+    color: $value;
+  }
+}
+
+@each $name, $value in $colors {
+  .bgc-#{$name} {
+    background-color: $value;
+  }
+}
+
+@each $name, $value in $colors {
+  .color-#{$name} {
+    color: $value;
+  }
+}

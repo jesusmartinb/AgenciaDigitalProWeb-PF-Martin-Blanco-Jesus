@@ -1,0 +1,15 @@
+@use '../custom' as *;
+
+.btn {
+	// BGC, Border, Color, Hover BG, Hover Border, Hover Color
+	@include button-variant($dark, transparent, $light, $cielo, transparent, $azul-marino);
+	// $padding-y, $padding-x, $font-size, $border-radius
+	@include button-size(1rem, 1rem, 2.4rem, .5rem);
+	display: block;
+	max-width: 30rem;
+	margin: 4rem auto;
+}
+
+.btn:hover {
+	font-weight: $font-weight-bolder;
+}

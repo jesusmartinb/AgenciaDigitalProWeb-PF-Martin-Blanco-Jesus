@@ -1,0 +1,148 @@
+@use '../custom' as *;
+@use '../utils/mixins' as m;
+@use '../utils/maps' as map;
+
+.hero {
+	min-height: $font-size-base * 25;
+
+	h2 {
+		padding-top: $font-size-base * 3;
+	}
+}
+
+.webp {
+	#sobre .hero {
+		@include m.bgImage('../../assets/img/background-nosotros.webp', $white-35);
+	
+		@include media-breakpoint-up(md) {
+			@include m.bgImage('../../assets/img/background-nosotros.webp', map-get(map.$blackscale, negro-35));
+		}
+	}
+}
+
+.no-webp {
+	#sobre .hero {
+		@include m.bgImage('../../assets/img/background-nosotros.jpg', $white-35);
+	
+		@include media-breakpoint-up(md) {
+			@include m.bgImage('../../assets/img/background-nosotros.jpg', map-get(map.$blackscale, negro-35));
+		}
+	}
+}
+
+.webp {
+	#equipo .hero {
+		@include m.bgImage('../../assets/img/background-equipo.webp', $white-35);
+	}
+}
+
+.no-webp {
+	#equipo .hero {
+		@include m.bgImage('../../assets/img/background-equipo.jpg', $white-35);
+	}
+}
+
+.cronology {
+	@include media-breakpoint-up(lg) {
+		min-width: 76.8rem;;
+	}
+
+	@include m.pantallaMuyGrande {
+		min-width: 102.4rem;
+	}
+}
+
+.cards-compromisos {
+	@include media-breakpoint-up(lg) {
+		column-gap: 4rem;
+	}
+
+	@include media-breakpoint-up(xl) {
+		column-gap: 8rem;
+	}
+
+	@include m.pantallaMuyGrande {
+		column-gap: 12rem;
+	}
+}
+
+.quieres-trabajar {
+	ul {
+		li {
+			&::before {
+				content: "❤ ";
+			}
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding-right: 20%;
+	}
+
+	@include media-breakpoint-up(xl) {
+		padding-right: 30%;
+		flex-shrink: 1.5;
+	}
+
+	@include m.pantallaMuyGrande {
+		padding-right: 10%;
+		border-right: 2px solid $azul-marino;
+		margin-right: 20%;
+	}
+}
+
+#servicios {
+	@include media-breakpoint-up(lg){
+		.main {
+			.image {
+				img {
+					visibility: hidden;
+				}
+			}
+		}
+	}
+}
+
+@include m.pantallaMuyGrande {
+	.history {
+			padding-right: 31rem;
+			border-right: 2px solid $azul-marino;
+			margin-right: 29rem;
+	}
+}
+
+.webp {
+	#nuevo {
+		.hero {
+			@include m.bgImage('../../assets/img/background-talento.webp', $white-35);
+		}
+	
+		@include media-breakpoint-up(lg) {
+			.image {
+				@include m.bgImage('../../assets/img/img03.webp', transparent);
+	
+				img {
+					visibility: hidden;
+				}
+			}
+		}
+	}
+}
+
+.no-webp {
+	#nuevo {
+		.hero {
+			@include m.bgImage('../../assets/img/background-talento.jpg', $white-35);
+		}
+	
+		@include media-breakpoint-up(lg) {
+			.image {
+				@include m.bgImage('../../assets/img/img03.jpg', transparent);
+	
+				img {
+					visibility: hidden;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+// Reescribir variables de bootstrap
+// Colores
+$black-10: rgba(0, 0, 0, 0.10);
+$black-35: rgba(0, 0, 0, 0.35);
+$black-55: rgba(0, 0, 0, 0.55);
+$black-70: rgba(0, 0, 0, 0.70);
+$black: #000000;
+$grey-a: #aaaaaa;
+$grey-3: #333333;
+$white-35: rgba(255, 255, 255, 0.35);
+$white: #ffffff;
+$aliceblue: aliceblue;
+$azul-marino: rgb(12, 58, 104);
+$azul: #179cf0;
+$cielo: rgb(175, 201, 226);
+$rojo: #ff0000;
+$verde: rgb(56, 207, 56);
+
+// Asignar paleta de colores a Bootstrap
+$dark: $black;
+$light: $white;
+$primary: $aliceblue;
+$secondary: $azul-marino;
+$info: $cielo;
+$danger: $rojo;
+$warning: $azul;
+$success: $verde;
+
+$body-bg: $primary;
+$body-color: $dark;
+
+
+//Tipografía
+$font-family-sans-serif: 'Lato', sans-serif;
+$headings-font-family: 'Roboto Slab', serif;
+
+$font-size: 62.5%;
+
+$font-size-root: $font-size;
+$font-size-base: 2rem;
+
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 1.6;
+$h3-font-size: $font-size-base * 1.2;
+$h4-font-size: $font-size-base * 1.4;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size
+);
+
+$font-weight-lighter:         200;
+$font-weight-bolder:          900;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 425px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1440px,
+  xxl: 1600px
+);
+
+$pantallaMuyGrande: 1920px;
+
+// Importar Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

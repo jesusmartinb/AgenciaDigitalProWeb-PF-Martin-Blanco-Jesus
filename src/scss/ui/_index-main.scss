@@ -1,0 +1,275 @@
+@use '../custom' as *;
+@use '../utils/mixins' as m;
+@use '../utils/extends';
+@use '../utils/maps' as map;
+
+.slogan {
+	@include m.slogan;
+}
+
+.webp {
+	.contactanos {
+		@include m.bgImage('../../assets/img/background01.webp', $white-35);
+		@include media-breakpoint-up(md) {
+				@include m.bgImage('../../assets/img/background01.webp', map-get(map.$blackscale, negro-35));
+		}
+	}
+}
+
+.no-webp {
+	.contactanos {
+		@include m.bgImage('../../assets/img/background01.jpg', $white-35);
+		@include media-breakpoint-up(md) {
+				@include m.bgImage('../../assets/img/background01.jpg', map-get(map.$blackscale, negro-35));
+		}
+	}
+}
+
+.contactanos {
+	min-height: 50rem;
+}
+
+.image {
+	img {
+		max-height: 795px;
+	}
+}
+
+.fases {
+	overflow-x: hidden;
+
+	@include media-breakpoint-up(lg) {
+		article {
+			position: relative;
+		}
+
+		.rows {
+			text-align: right;
+			padding-right: $font-size-base * 2;
+			border-right: 1px solid $azul-marino;
+
+			&::after {
+				@extend %punto;
+				right: -10px;
+			}
+		}
+
+		.rows-reverse {
+			justify-self: end;
+			padding-left: $font-size-base * 2;
+			border-left: 1px solid $azul-marino;
+
+			&::before {
+				@extend %punto;
+				left: -10px;
+			}
+		}
+
+		.image {
+			img {
+				display: none;
+			}
+		}
+	}
+}
+
+.webp {
+	.fases {
+		@include media-breakpoint-up(lg) {
+			.image {
+				@include m.bgImage('../../assets/img/img02.webp', transparent);
+			}
+		}
+	}
+}
+
+.no-webp {
+	.fases {
+		@include media-breakpoint-up(lg) {
+			.image {
+				@include m.bgImage('../../assets/img/img02.jpg', transparent);
+			}
+		}
+	}
+}
+
+.razones {
+	@include media-breakpoint-up(lg) {
+		.image {
+			img {
+				display: none;
+			}
+		}
+	}
+}
+
+.webp {
+	.razones {
+		@include media-breakpoint-up(lg) {
+			.image {
+				@include m.bgImage('../../assets/img/img01.webp', transparent);
+			}
+		}
+	}
+}
+
+.no-webp {
+	.razones {
+		@include media-breakpoint-up(lg) {
+			.image {
+				@include m.bgImage('../../assets/img/img01.jpg', transparent);
+			}
+		}
+	}
+}
+
+// Acordeon
+.acordeon {
+	text-align: left;
+}
+
+p {
+	transition: all 0.3s;;
+}
+
+
+.acordeon__item {
+	i::before,
+	i::after {
+		transition: all 0.3s;;
+	}
+}
+
+.faqs {
+	max-width: 750px;
+	margin:  0 auto;
+
+	h2 {
+		-webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+    color: $dark;
+    margin-bottom: 3rem;
+    margin-top: 0;
+	}
+}
+
+.faqs,
+.cronology {
+	.acordeon__item-title {
+		font-size: $font-size-base;
+    line-height: $font-size-base * 1.7;
+    text-align: left;
+    padding: 1.5rem 3rem 0 1.5rem;
+    text-transform: none;
+    font-weight: $font-weight-normal;
+    letter-spacing: 1px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    transition: .2s;
+	}
+
+	.acordeon__item-content {
+		color: $grey-3;
+    text-align: left;
+    font-size: $font-size-base * 0.9;
+    line-height: 1.45;
+    position: relative;
+    overflow: hidden;
+    max-height: 25rem;
+    will-change: max-height;
+    contain: layout;
+    display: inline-block;
+    opacity: 1;
+    transform: translate(0, 0);
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    padding: 0 5rem 0 1.5rem;
+    transition: .3s opacity, .6s max-height;
+    hyphens: auto;
+    z-index: 2;
+	}
+
+	.acordeon {
+		list-style: none;
+    perspective: 900;
+    padding: 0;
+    margin: 0;
+	}
+
+	.acordeon__item {
+		position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 3px 10px -2px map-get($colors, info);
+    -webkit-tap-highlight-color: transparent;
+	}
+
+	.acordeon__item+li {
+		margin-top: 1.5rem;
+	}
+
+	.acordeon__item i {
+    position: absolute;
+    transform: translate(-2px, 0);
+    margin-top: 2.8rem;
+    right: 1.5rem;
+	}
+
+	.acordeon__item i::before,
+	.acordeon__item i::after {
+		content: "";
+    position: absolute;
+    width: 0.3rem;
+    height: 0.9rem;
+	}
+
+	@include media-breakpoint-down(md) {
+		.acordeon__item .black::before,
+		.acordeon__item .black::after,
+		.acordeon__item .white::before,
+		.acordeon__item .white::after {
+			background-color: map-get(map.$blackscale, negro);
+		}
+	}
+	
+
+	.acordeon__item i::before {
+		transform: translate(-2px, 0) rotate(45deg);
+	}
+
+	.acordeon__item i::after {
+		transform: translate(2px, 0) rotate(-45deg);
+	}
+
+	.acordeon__item input[type=checkbox] {
+		position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    touch-action: manipulation;
+	}
+
+	.acordeon__item input[type=checkbox]:checked~.acordeon__item-title {
+		color: $dark;
+	}
+
+	.acordeon__item input[type=checkbox]:checked~.acordeon__item-content {
+		max-height: 0;
+    transition: .3s;
+    opacity: 0;
+	}
+
+	.acordeon__item input[type=checkbox]:checked~i::before {
+		transform: translate(2px, 0) rotate(45deg);
+	}
+
+	.acordeon__item input[type=checkbox]:checked~i::after {
+    transform: translate(-2px, 0) rotate(-45deg);
+	}
+}
+// Fin Acordeon

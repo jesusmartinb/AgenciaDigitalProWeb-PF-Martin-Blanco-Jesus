@@ -1,0 +1,258 @@
+@use "../custom" as *;
+@use "../utils/mixins" as m;
+@use "../utils/extends";
+@use "../utils/maps" as map;
+
+/* Animaciones, transiciones, transformaciones y gradientes */
+
+/* Transición de color y background en función de posición scroll */
+@include media-breakpoint-up(md) {
+	#index.black,
+	#index .black,
+	#agencia.black,
+	#agencia .black,
+	#servicios.black,
+	#servicios .black,
+	#proyectos.black,
+	#proyectos .black,
+	#planes.black,
+	#planes .black,
+	#contacto.black,
+	#contacto .black,
+	#mapa.black,
+	#mapa .black,
+	#error.black,
+	#error .black,
+	.cronology.black,
+	.cronology .black,
+	.acordeon__item .white::before,
+	.acordeon__item .white::after {
+		background-color: map-get(map.$blackscale, negro);
+		color: map-get($colors, primary);
+		transition: all 0.5s ease-in-out;
+	}
+
+	#index.white,
+	#index .white,
+	#agencia.white,
+	#agencia .white,
+	#servicios.white,
+	#servicios .white,
+	#proyectos.white,
+	#proyectos .white,
+	#planes.white,
+	#planes .white,
+	#contacto.white,
+	#contacto .white,
+	#mapa.white,
+	#mapa .white,
+	#error.white,
+	#error .white,
+	.cronology.white,
+	.cronology .white,
+	.acordeon__item .black::before,
+	.acordeon__item .black::after {
+		background-color: map-get($colors, primary);
+		color: map-get(map.$blackscale, negro);
+		transition: all 0.5s ease-in-out;
+	}
+}
+
+/* Animaciones con la librería Animate.css V4 */
+@include m.pantallaMuyGrande {
+	.hidden {
+		visibility: hidden;
+	}
+}
+
+/* Animación de degradado */
+.planes:not(.trans),
+#contacto .row {
+	background: linear-gradient(45deg, #007d81, #0075b9, #00ff5e);
+	animation: AnimacionDegradado 10s ease-in-out infinite;
+	background-size: 600% 600%;
+}
+
+@keyframes AnimacionDegradado {
+	0% {
+		background-position: 0 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	to {
+		background-position: 0 50%;
+	}
+}
+
+/* Animación slider cards-equipo y cards-testimonios*/
+.cards-equipo,
+.cards-testimonios {
+	width: 31rem;
+	height: auto;
+	margin: 1rem auto 0;
+	overflow: hidden;
+
+	@include media-breakpoint-up(lg) {
+		width: 65rem;
+	}
+
+	li {
+		width: 31rem;
+		list-style: none;
+
+		@include media-breakpoint-up(lg) {
+			width: 50%;
+		}
+	}
+
+	.card {
+		width: 100%;
+
+		@include media-breakpoint-up(lg) {
+			width: 90%;
+		}
+	}
+}
+
+.cards-equipo ul {
+	@extend %cards-ul;
+	width: 400%;
+	animation: slide 30s infinite alternate ease-in-out;
+
+	@include media-breakpoint-up(lg) {
+		width: 200%;
+		animation: slide3 30s infinite alternate ease-in-out;
+	}
+}
+
+.cards-testimonios ul {
+	@extend %cards-ul;
+	width: 300%;
+	animation: slide2 36s infinite alternate ease-in-out;
+
+	@include media-breakpoint-up(lg) {
+		width: 150%;
+		animation: slide4 36s infinite alternate ease-in-out;
+	}
+}
+
+.card-content {
+	@include media-breakpoint-up(lg) {
+		min-height: 41rem;
+	}
+}
+
+@keyframes slide4 {
+	0% {
+		margin-left: 0;
+	}
+
+	30% {
+		margin-left: 0;
+	}
+
+	33% {
+		margin-left: -50%;
+	}
+
+	63% {
+		margin-left: -50%;
+	}
+
+	66% {
+		margin-left: 0%;
+	}
+
+	100% {
+		margin-left: 0%;
+	}
+}
+
+@keyframes slide3 {
+	0% {
+		margin-left: 0;
+	}
+
+	30% {
+		margin-left: 0;
+	}
+
+	33% {
+		margin-left: -50%;
+	}
+
+	63% {
+		margin-left: -50%;
+	}
+
+	66% {
+		margin-left: -100%;
+	}
+
+	100% {
+		margin-left: -100%;
+	}
+}
+
+@keyframes slide2 {
+	0% {
+		margin-left: 0;
+	}
+
+	30% {
+		margin-left: 0;
+	}
+
+	33% {
+		margin-left: -100%;
+	}
+
+	63% {
+		margin-left: -100%;
+	}
+
+	66% {
+		margin-left: -200%;
+	}
+
+	100% {
+		margin-left: -200%;
+	}
+}
+
+@keyframes slide {
+	0% {
+		margin-left: 0;
+	}
+
+	20% {
+		margin-left: 0;
+	}
+
+	25% {
+		margin-left: -100%;
+	}
+
+	45% {
+		margin-left: -100%;
+	}
+
+	50% {
+		margin-left: -200%;
+	}
+
+	70% {
+		margin-left: -200%;
+	}
+
+	75% {
+		margin-left: -300%;
+	}
+
+	100% {
+		margin-left: -300%;
+	}
+}

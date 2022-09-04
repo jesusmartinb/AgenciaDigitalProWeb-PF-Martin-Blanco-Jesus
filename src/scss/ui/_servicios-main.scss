@@ -1,0 +1,258 @@
+@use '../custom' as *;
+@use '../utils/mixins' as m;
+@use '../utils/extends';
+
+.container-fluid {
+	padding: 0;
+}
+
+.row {
+	--bs-gutter-x: 0;
+
+	@include media-breakpoint-up(lg) {
+		hr {
+			display: none;
+		}
+	}
+}
+
+.webp {
+	#diseno {
+		.hero {
+			@include m.bgImage('../../assets/img/background-diseno.webp', $white-35);
+		}
+	
+		.column1 {
+			@include media-breakpoint-up(lg) {
+				@include m.bgImage('../../assets/img/img04.webp', transparent);
+			}
+		}
+	}
+}
+
+.no-webp {
+	#diseno {
+		.hero {
+			@include m.bgImage('../../assets/img/background-diseno.jpg', $white-35);
+		}
+	
+		.column1 {
+			@include media-breakpoint-up(lg) {
+				@include m.bgImage('../../assets/img/img04.jpg', transparent);
+			}
+		}
+	}
+}
+
+#diseno {
+	.column2,
+	.column3 {
+		@extend %columns;
+	}
+}
+
+.webp {
+	#desarrollo {
+		.hero {
+			@include m.bgImage('../../assets/img/background-desarrollo.webp', $white-35);
+		}
+	
+		.column3 {
+			@include media-breakpoint-up(lg) {
+				@include m.bgImage('../../assets/img/img05.webp', transparent);
+			}
+		}
+	}
+}
+
+.no-webp {
+	#desarrollo {
+		.hero {
+			@include m.bgImage('../../assets/img/background-desarrollo.jpg', $white-35);
+		}
+	
+		.column3 {
+			@include media-breakpoint-up(lg) {
+				@include m.bgImage('../../assets/img/img05.jpg', transparent);
+			}
+		}
+	}
+}
+
+#desarrollo {
+	.column2,
+	.column1 {
+		@extend %columns;
+	}
+}
+
+.webp {
+	#optimiza {
+		.hero {
+			@include m.bgImage('../../assets/img/background-optimi.webp', $white-35);
+		}
+	
+		.column1 {
+			@include media-breakpoint-up(lg) {
+				@include m.bgImage('../../assets/img/img06.webp', transparent);
+			}
+		}
+	}
+}
+
+.no-webp {
+	#optimiza {
+		.hero {
+			@include m.bgImage('../../assets/img/background-optimi.jpg', $white-35);
+		}
+	
+		.column1 {
+			@include media-breakpoint-up(lg) {
+				@include m.bgImage('../../assets/img/img06.jpg', transparent);
+			}
+		}
+	}
+}
+
+#optimiza {
+	.column2 {
+		@extend %columns;
+	}
+}
+
+.webp {
+	#posicionamiento {
+		.hero {
+			@include m.bgImage('../../assets/img/background-posiciona.webp', $white-35);
+		}
+	
+		.column3 {
+			@include media-breakpoint-up(lg) {
+				@include m.bgImage('../../assets/img/img07.webp', transparent);
+			}
+		}
+	}
+}
+
+.no-webp {
+	#posicionamiento {
+		.hero {
+			@include m.bgImage('../../assets/img/background-posiciona.jpg', $white-35);
+		}
+	
+		.column3 {
+			@include media-breakpoint-up(lg) {
+				@include m.bgImage('../../assets/img/img07.jpg', transparent);
+			}
+		}
+	}
+}
+
+#posicionamiento {
+	.column2,
+	.column1 {
+		@extend %columns;
+	}
+}
+
+.webp {
+	#publicidad {
+		.hero {
+			@include m.bgImage('../../assets/img/background-publi.webp', $white-35);
+		}
+	
+		.column1 {
+			@include media-breakpoint-up(lg) {
+				@include m.bgImage('../../assets/img/img08.webp', transparent);
+			}
+		}
+	}
+}
+
+.no-webp {
+	#publicidad {
+		.hero {
+			@include m.bgImage('../../assets/img/background-publi.jpg', $white-35);
+		}
+	
+		.column1 {
+			@include media-breakpoint-up(lg) {
+				@include m.bgImage('../../assets/img/img08.jpg', transparent);
+			}
+		}
+	}
+}
+
+#publicidad {
+	.column2,
+	.column3 {
+		@extend %columns;
+	}
+}
+
+.webp {
+	#marketing {
+		.hero {
+			@include m.bgImage('../../assets/img/background-marketing.webp', $white-35);
+		}
+	
+		.column3 {
+			@include media-breakpoint-up(lg) {
+				@include m.bgImage('../../assets/img/img09.webp', transparent);
+			}
+		}
+	}
+}
+
+.no-webp {
+	#marketing {
+		.hero {
+			@include m.bgImage('../../assets/img/background-marketing.jpg', $white-35);
+		}
+	
+		.column3 {
+			@include media-breakpoint-up(lg) {
+				@include m.bgImage('../../assets/img/img09.jpg', transparent);
+			}
+		}
+	}
+}
+
+#marketing {
+	.column2,
+	.column1 {
+		@extend %columns;
+	}
+}
+
+hr {
+	padding: 0 8rem !important;
+	width: 0% !important;
+	opacity: 1;
+	margin: $font-size-base auto;
+}
+
+.column2,
+.column3 {
+	@include media-breakpoint-up(lg) {
+		p:first-child {
+			margin-top: $font-size-base * 4;
+		}
+	}
+}
+
+#servicios {
+	.main {
+		@include media-breakpoint-up(xl) {
+			h3,
+			p {
+				margin: $font-size-base * 2.5;
+			}
+		}
+
+		@include m.pantallaMuyGrande {
+			margin: $font-size-base * 5 0;
+		}
+	}
+}
+

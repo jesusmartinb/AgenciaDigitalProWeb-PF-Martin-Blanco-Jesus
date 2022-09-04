@@ -1,0 +1,184 @@
+@use '../custom' as *;
+@use '../utils/mixins' as m;
+
+/* Cards equipo - Cards Animaciones*/
+.card {
+	@include m.card(57rem);
+
+	img {
+		height: 31rem;
+	}
+
+	p {
+		margin: 1rem 0;
+	}
+
+	.cargo {
+		font-variant: small-caps;
+	}
+
+	.nombre {
+		font-weight: $font-weight-bold;
+	}
+}
+
+.card-content {
+	min-height: 51rem;
+	padding: $font-size-base;
+}
+
+#testimonios {
+	.card {
+		.image {
+			@include m.card(31rem);
+		}
+	}
+
+	.image {
+		img {
+			width: 100%;
+		}
+	}
+
+	.cards-testimonios {
+		margin-bottom: $font-size-base * 2;
+	}
+
+	.identidad {
+		padding: $font-size-base;
+	}
+}
+
+.citation {
+	font-style: italic;
+}
+
+/* Cards Oferta */
+.cards-ofertas {
+	@include media-breakpoint-up(md) {
+		column-gap: $font-size-base;
+	}
+
+	@include media-breakpoint-up(xl) {
+		width: 140rem;
+	}
+}
+
+.card-oferta {
+	border: 2px solid $dark;
+
+	ul {
+		li {
+			&::before {
+				content: "❤ ";
+			}
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		min-width: 34.4rem;
+		width: 49%;
+		max-width: 48.2rem;
+		padding: 1rem;
+	}
+}
+
+/* Cards Planes */
+.cards-planes {
+	margin-top: $font-size-base * 2.5;
+
+	@include media-breakpoint-up(xxl) {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.card-planes {
+	max-width: 38.5rem;
+	margin: 0 auto 4.6rem;
+
+	@include media-breakpoint-up(lg) {
+		min-width: 33rem;
+	}
+
+	.content {
+		border: 2px solid $grey-a;
+    border-radius: 1rem;
+    max-width: 38.5rem;
+	}
+
+	.precio {
+		font-size: $font-size-base * 1.6;
+    font-weight: $font-weight-normal;
+    font-style: oblique;
+	}
+}
+
+
+/* Cards Proceso */
+.cards-proceso {
+	@include media-breakpoint-up(xl) {
+		margin-top: 10rem;
+	}
+}
+
+.card-proceso {
+	width: 28rem;
+	margin: 0 auto;
+	height: 24rem;
+
+	.iconos,
+	.iconos2,
+	.iconos3,
+	.iconos4 {
+		position: relative;
+	}
+	
+	.iconos {
+		i {
+			&:first-child {
+				@include m.iconos(-25px);
+			}
+
+			&:last-child {
+				font-size: $font-size-base * 3;
+			}
+		}
+	}
+
+	.iconos2 {
+		i {
+			&:first-child {
+				@include m.iconos(-35px);
+			}
+
+			&:last-child {
+				font-size: $font-size-base * 3;
+			}
+		}
+	}
+
+	.iconos3 {
+		i {
+			&:first-child {
+				@include m.iconos(-23px);
+			}
+
+			&:last-child {
+				font-size: $font-size-base * 3;
+			}
+		}
+	}
+
+	.iconos4 {
+		i {
+			&:first-child {
+				@include m.iconos(-30px);
+			}
+
+			&:last-child {
+				font-size: $font-size-base * 3;
+			}
+		}
+	}
+}

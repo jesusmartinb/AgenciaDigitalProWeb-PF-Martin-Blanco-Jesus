@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Agencia Web,Web,Portfolio,Proyectos,Clientes,Testimonios">
+	<meta name="description" content="Puede comprobar algunos de los proyectos de nuestro portfolio así como las opiniones de nuestros clientes">
+	<title>ProWeb - Portfolio De Proyectos. Que Opinan Nuestros Clientes</title>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/92d719d9ae.js" crossorigin="anonymous"></script>
+	<!-- Preload -->
+	<!-- Normalización de estilos o reseteo con Normalize -->
+	<link rel="preload" href="../assets/css/normalize.css" as="style">
+	<link rel="stylesheet" href="../assets/css/normalize.css">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Slab:wght@200;400;700;900&display=swap" crossorigin="crossorigin" as="font">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Slab:wght@200;400;700;900&display=swap" rel="stylesheet">
+	<!-- Estilos -->
+	<!-- <link rel="stylesheet" href="../assets/css/styles.css"> -->
+	<link rel="preload" href="../assets/css/main.css" as="style">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body id="proyectos" class="black d-grid">
+	<header class="pt-2 d-md-grid">
+		<div class="mt-5 mt-md-2 d-flex flex-column d-md-flex flex-md-row justify-content-center justify-content-md-between align-items-center align-items-md-center">
+			<div class="fs-3 ms-md-3">
+				<p>674581254 | info@proweb.com</p>
+			</div>
+			<div class="header__redes">
+				<i class="fab mb-4 me-3 fa-linkedin"></i>
+				<i class="fab mb-4 me-3 fa-twitter-square color-warning"></i>
+				<i class="fab mb-4 me-3 fa-instagram-square"></i>
+			</div> <!-- fin .header__redes -->
+		</div> <!-- fin .header__contacto -->
+		<div class="d-flex justify-content-between align-items-center px-4 position-fija">
+			<div class="header__logo d-flex justify-content-center justify-content-md-start ms-md-5">
+				<a class="black" href="../index.html">ProWeb</a>
+			</div> <!-- fin .header__logo-->
+			<nav class="navbar navbar-expand-md">
+				<div class="container-fluid">
+					<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="offcanvas offcanvas-start bgc-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+						<!-- <a class="navbar-brand" href="./index.html">ProWeb</a> -->
+						<div class="offcanvas-body">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<!-- <li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">ProWeb</a>
+							</li> -->
+								<li class="submenu nav-item dropdown">
+									<div class="btn-group navbar-btn">
+										<a class="black nav-link" href="agencia.html" role="button">Agencia</a>
+										<a href="" role="button" class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+											<span class="visually-hidden">Toggle Dropdown</span>
+										</a>
+										<ul class="children dropdown-menu bgc-primary">
+											<li><a class="dropdown-item" href="agencia.html#sobre">Sobre Nosotros</a></li>
+											<li><a class="dropdown-item" href="agencia.html#equipo">Equipo</a></li>
+											<li><a class="dropdown-item" href="agencia.html#nuevo">Nuevo Talento</a></li>
+										</ul> <!-- Fin submenú agencia -->
+									</div>
+								</li>
+								<li class="submenu nav-item dropdown">
+									<div class="btn-group navbar-btn">
+										<a class="black nav-link" href="servicios.html" role="button">Servicios</a>
+										<a href="" role="button" class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+											<span class="visually-hidden">Toggle Dropdown</span>
+										</a>
+										<ul class="children dropdown-menu bgc-primary">
+											<li><a class="dropdown-item" href="servicios.html#diseno">Diseño Web</a></li>
+											<li><a class="dropdown-item" href="servicios.html#desarrollo">Desarrollo Web</a></li>
+											<li><a class="dropdown-item" href="servicios.html#optimiza">Optimización</a></li>
+											<li><a class="dropdown-item" href="servicios.html#posicionamiento">Posicionamiento</a></li>
+											<li><a class="dropdown-item" href="servicios.html#publicidad">Publicidad</a></li>
+											<li><a class="dropdown-item" href="servicios.html#marketing">Marketing</a></li>
+										</ul><!-- Fin submenu servicios -->
+									</div>
+								</li>
+								<li class="submenu nav-item dropdown">
+									<div class="btn-group navbar-btn">
+										<a class="black nav-link" href="proyectos.html" role="button">Proyectos</a>
+										<a href="" role="button" class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+											<span class="visually-hidden">Toggle Dropdown</span>
+										</a>
+										<ul class="children dropdown-menu bgc-primary">
+											<li><a class="dropdown-item" href="proyectos.html#portfolio">Portfolio</a></li>
+											<li><a class="dropdown-item" href="proyectos.html#testimonios">Testimonios</a></li>
+										</ul><!-- Fin submenú proyectos -->
+									</div>
+								</li>
+								<li class="nav-item"><a class="black nav-link" href="planes.html">Planes</a></li>
+								<li class="nav-item"><a class="black nav-link" href="contacto.html">Contacto</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav> <!-- Fin navegación principal del header-->
+		</div>
+	</header> <!-- Fin header -->
+	<main class="main w-100">
+		<h1 class="text-center mb-5">Proyectos Web, <br>Marketing Digital y Mucho Más...</h1>
+		<section id="portfolio" class="p-5">
+			<h2 id="cambio" class="text-center">Portfolio</h2>
+			<div class="d-md-grid gallery-container">
+				<article class="gallery-item m-md-0 hijo1">
+					<div class="gallery-item-media h-md-100">
+						<a class="d-md-block w-md-100 h-md-100" href="https://mery-lou.com" target="_blank">
+							<picture>
+								<source srcset="../assets/img/galeria1.avif" type="image/avif">
+								<source srcset="../assets/img/galeria1.webp" type="image/webp">
+								<img loading="lazy" src="../assets/img/galeria1.jpg" alt="Restaurante Mery-Lou" class="gallery-item__image img-fluid">
+							</picture>
+						</a>
+					</div>
+					<div class="gallery-item__body">
+						<h2 class="gallery-item__title">
+							<a class="gallery-item__title-link" href="https://mery-lou.com" target="_blank">Restaurante <br>Mery-Lou</a>
+						</h2>
+						<h3 class="gallery-item__subtitle">2018</h3>
+						<p class="gallery-item__copy">HTML5, CSS3, JavaScript, PHP</p>
+					</div>
+				</article> <!-- Fin .gallery-item -->
+				<article class="gallery-item m-md-0 hijo2">
+					<div class="gallery-item-media h-md-100">
+						<a class="d-md-block w-md-100 h-md-100" href="https://cyberdietoterapia.com/sostenible" target="_blank">
+							<picture>
+								<source srcset="../assets/img/galeria2.avif" type="image/avif">
+								<source srcset="../assets/img/galeria2.webp" type="image/webp">
+								<img loading="lazy" src="../assets/img/galeria2.jpg" alt="Objetivos de sostenibilidad de la ONU" class="gallery-item__image img-fluid">
+							</picture>
+						</a>
+					</div>
+					<div class="gallery-item__body">
+						<h2 class="gallery-item__title"><a href="https://cyberdietoterapia.com/sostenible" target="_blank" class="gallery-item__title-link">Objetivos de Sostenibilidad de la ONU</a></h2>
+						<h3 class="gallery-item__subtitle">2020</h3>
+						<p class="gallery-item__copy">HTML5, CSS3, JavaScript</p>
+					</div>
+				</article> <!-- Fin .gallery-item -->
+				<article class="gallery-item m-md-0 hijo3">
+					<div class="gallery-item-media h-md-100">
+						<a class="d-md-block w-md-100 h-md-100" href="https://blog.mery-lou.com" target="_blank">
+							<picture>
+								<source srcset="../assets/img/galeria3.avif" type="image/avif">
+								<source srcset="../assets/img/galeria3.webp" type="image/webp">
+								<img loading="lazy" src="../assets/img/galeria3.jpg" alt="Blog Mery-Lou" class="gallery-item__image img-fluid">
+							</picture>
+						</a>
+					</div>
+					<div class="gallery-item__body">
+						<h2 class="gallery-item__title"><a href="https://blog.mery-lou.com" target="_blank" class="gallery-item__title-link">Mery-Lou Blog</a></h2>
+						<h3 class="gallery-item__subtitle">2019</h3>
+						<p class="gallery-item__copy">HTML5, CSS3, JavaScript, PHP, WordPress</p>
+					</div>
+				</article> <!-- Fin .gallery-item -->
+				<article class="gallery-item m-md-0 hijo4">
+					<div class="gallery-item-media h-md-100">
+						<a class="d-md-block w-md-100 h-md-100" href="https://the-dream-jmb-2021.netlify.app" target="_blank">
+							<picture>
+								<source srcset="../assets/img/galeria4.avif" type="image/avif">
+								<source srcset="../assets/img/galeria4.webp" type="image/webp">
+								<img loading="lazy" src="../assets/img/galeria4.jpg" alt="Portada de la última actuación de The Dream" class="gallery-item__image img-fluid">
+							</picture>
+						</a>
+					</div>
+					<div class="gallery-item__body">
+						<h2 class="gallery-item__title"><a href="https://the-dream-jmb-2021.netlify.app" target="_blank" class="gallery-item__title-link">The Dream</a></h2>
+						<h3 class="gallery-item__subtitle">2021</h3>
+						<p class="gallery-item__copy">HTML5, CSS3, JavaScript</p>
+					</div>
+				</article> <!-- Fin .gallery-item -->
+				<article class="gallery-item m-md-0 hijo5">
+					<div class="gallery-item-media h-md-100">
+						<a class="d-md-block w-md-100 h-md-100" href="https://cyberdietoterapia.com" target="_blank">
+							<picture>
+								<source srcset="../assets/img/galeria5.avif" type="image/avif">
+								<source srcset="../assets/img/galeria5.webp" type="image/webp">
+								<img loading="lazy" src="../assets/img/galeria5.jpg" alt="Captura del home de la web Asimov Fans" class="gallery-item__image img-fluid">
+							</picture>
+						</a>
+					</div>
+					<div class="gallery-item__body">
+						<h2 class="gallery-item__title"><a href="https://cyberdietoterapia.com" target="_blank" class="gallery-item__title-link">Asimov Fans</a></h2>
+						<h3 class="gallery-item__subtitle">2019</h3>
+						<p class="gallery-item__copy">HTML5, CSS3, JavaScript</p>
+					</div>
+				</article> <!-- Fin .gallery-item -->
+				<article class="gallery-item m-md-0 hijo6">
+					<div class="gallery-item-media h-md-100">
+						<a class="d-md-block w-md-100 h-md-100" href="https://jmartinblan.netlify.app" target="_blank">
+							<picture>
+								<source srcset="../assets/img/galeria6.avif" type="image/avif">
+								<source srcset="../assets/img/galeria6.webp" type="image/webp">
+								<img loading="lazy" src="../assets/img/galeria6.jpg" alt="Escritorio de trabajo de un desarrollador Front-End. " class="gallery-item__image img-fluid">
+							</picture>
+						</a>
+					</div>
+					<div class="gallery-item__body">
+						<h2 class="gallery-item__title"><a href="https://jmartinblan.netlify.app" target="_blank" class="gallery-item__title-link">Desarrollo Front-End. Como construir una web</a></h2>
+						<h3 class="gallery-item__subtitle">2020</h3>
+						<p class="gallery-item__copy">HTML5, CSS3, JavaScript</p>
+					</div>
+				</article> <!-- Fin .gallery-item -->
+				<article class="gallery-item m-md-0 hijo7">
+					<div class="gallery-item-media h-md-100">
+						<a class="d-md-block w-md-100 h-md-100" href="https://pokemon-game-jmb-2022.netlify.app" target="_blank">
+							<picture>
+								<source srcset="../assets/img/galeria7.avif" type="image/avif">
+								<source srcset="../assets/img/galeria7.webp" type="image/webp">
+								<img loading="lazy" src="../assets/img/galeria7.jpg" alt="Pokemon Game, adivina que pokemon se esconde tras la silueta" class="gallery-item__image img-fluid">
+							</picture>
+						</a>
+					</div>
+					<div class="gallery-item__body">
+						<h2 class="gallery-item__title"><a href="https://pokemon-game-jmb-2022.netlify.app" target="_blank" class="gallery-item__title-link">Pokemon Game</a></h2>
+						<h3 class="gallery-item__subtitle">2022</h3>
+						<p class="gallery-item__copy">HTML5, CSS3, JavaScript, Vue.js</p>
+					</div>
+				</article> <!-- Fin .gallery-item -->
+			</div> <!-- Fin .gallery-container -->
+		</section> <!-- Fin section #portfolio -->
+		<section id="testimonios">
+			<h2 class="content text-center">Testimonios</h2>
+			<div class="cards-testimonios">
+				<ul>
+					<li>
+						<div class="card">
+							<div class="card-content">
+								<p><q class="citation">Simplemente perfecto, en todos los sentidos. Una atención de diez. Un trato inmejorable, una atención personalizada, mil revisiones siempre con una sonrisa hasta que ha quedado perfecto, y eso que ni nosotros sabíamos cómo queríamos que fuera. Han captado perfectamente lo que buscábamos. Sin duda cruzarnos con ProWeb ha sido un gran acierto para nuestra empresa</q></p>
+							</div> <!-- Fin .card-content -->
+							<div class="card-testigo">
+								<div class="image-testigo image">
+									<picture>
+										<source srcset="../assets/img/testigo1.avif" type="image/avif">
+										<source srcset="../assets/img/testigo1.webp" type="image/webp">
+										<img loading="lazy" src="../assets/img/testigo1.jpg" alt="Imagen personal del testigo" class="testigo img-fluid">
+									</picture>
+								</div> <!-- Fin .image-testigo -->
+								<div class="identidad">
+									<p class="nombre">Guillermo Torres</p>
+									<p class="empresa">MetaPlax</p>
+								</div> <!-- Fin .identidad -->
+							</div> <!-- Fin .card-testigo -->
+						</div> <!-- Fin .card -->
+					</li>
+					<li>
+						<div class="card">
+							<div class="card-content">
+								<p><q class="citation">Descubrimos ProWeb hace un año y han revolucionado la imagen corporativa de nuestra empresa. También les hemos encargado el diseño corporativo de una nueva start-up que hemos creado y estamos alucinando con sus fantásticas propuestas. Equipo profesional, gente comprometida, recomendable 100%</q></p>
+							</div> <!-- Fin .card-content -->
+							<div class="card-testigo">
+								<div class="image-testigo image">
+									<picture>
+										<source srcset="../assets/img/testigo2.avif" type="image/avif">
+										<source srcset="../assets/img/testigo2.webp" type="image/webp">
+										<img loading="lazy" src="../assets/img/testigo2.jpg" alt="Imagen personal del testigo" class="testigo img-fluid">
+									</picture>
+								</div> <!-- Fin .image-testigo -->
+								<div class="identidad">
+									<p class="nombre">Julio Pino</p>
+									<p class="empresa">Eurocombo</p>
+								</div> <!-- Fin .identidad -->
+							</div> <!-- Fin .card-testigo -->
+						</div> <!-- Fin .card -->
+					</li>
+					<li>
+						<div class="card">
+							<div class="card-content">
+								<p><q class="citation">Mi experiencia con ProWeb ha sido excelente, buena relación calidad-precio y siempre han mostrado muy buena disposición a realizar cambios los cambios constantes que durante el desarrollo de la web que como cliente se nos van ocurriendo con el tiempo. Recomendable</q></p>
+							</div> <!-- Fin .card-content -->
+							<div class="card-testigo">
+								<div class="image-testigo image">
+									<picture>
+										<source srcset="../assets/img/testigo3.avif" type="image/avif">
+										<source srcset="../assets/img/testigo3.webp" type="image/webp">
+										<img loading="lazy" src="../assets/img/testigo3.jpg" alt="Imagen personal del testigo" class="testigo img-fluid">
+									</picture>
+								</div> <!-- Fin .image-testigo -->
+								<div class="identidad">
+									<p class="nombre">Luisa Hernández</p>
+									<p class="empresa">La Sirenita</p>
+								</div> <!-- Fin .identidad -->
+							</div> <!-- Fin .card-testigo -->
+						</div> <!-- Fin .card -->
+					</li>
+				</ul>
+			</div>
+		</section> <!-- Fin section #testimonios -->
+	</main> <!-- Fin main -->
+	<footer class="footer d-flex flex-column justify-content-center text-center pt-lg-5 bgc-negro color-primary">
+		<div class="order-2 mb-4 order-lg-1 d-lg-flex justify-content-lg-around justify-content-xl-between">
+			<nav class="footer__menu d-none d-md-block">
+				<ul class="d-md-flex">
+					<li class="text-md-start pe-md-3"><a href="agencia.html">Agencia</a>
+						<ul class="d-md-block p-md-3 pe-md-4 ps-md-0">
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="agencia.html#sobre">Sobre Nosotros</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="agencia.html#equipo">Equipo</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="agencia.html#nuevo">Nuevo Talento</a></li>
+						</ul> <!-- Fin submenú agencia -->
+					</li>
+					<li class="text-md-start pe-md-3"><a href="servicios.html">Servicios</a>
+						<ul class="d-md-block p-md-3 pe-md-4 ps-md-0">
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="servicios.html#diseno">Diseño Web</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="servicios.html#desarrollo">Desarrollo Web</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="servicios.html#optimiza">Optimización</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="servicios.html#posicionamiento">Posicionamiento</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="servicios.html#publicidad">Publicidad</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="servicios.html#marketing">Marketing</a></li>
+						</ul> <!-- Fin submenú servicios -->
+					</li>
+					<li class="text-md-start pe-md-3"><a href="proyectos.html">Proyectos</a>
+						<ul class="d-md-block p-md-3 pe-md-4 ps-md-0">
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="proyectos.html#portfolio">Portfolio</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="proyectos.html#testimonios">Testimonios</a></li>
+						</ul> <!-- Fin submenú proyectos -->
+					</li>
+					<li class="text-md-start pe-md-3"><a href="planes.html">Planes</a></li>
+					<li class="text-md-start pe-md-3"><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav> <!-- Fin navegacion principal del footer -->
+			<div class="footer__redes pe-xl-5">
+				<p class="footer__redes-siguenos my-5">Siguenos</p>
+				<i class="fab fa-linkedin ms-4 mb-4"></i>
+				<i class="fab fa-twitter-square ms-4 mb-4 color-warning"></i>
+				<i class="fab fa-instagram-square ms-4 mb-4 color-negro"></i>
+			</div> <!-- Fin .redes -->
+		</div> <!-- Fin .footer-sup -->
+		<div class="order-3 pb-lg-3">
+			<div class="mapa">
+				<nav class="d-block">
+					<ul class="d-flex justify-content-center p-2 list-unstyled">
+						<li><a class="color-primary" href="../pages/mapa-sitio.html">Mapa del Sitio</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="copy">
+				<p>ProWeb SL &reg; - Avd. Catalunya 39, 3º 4ª, 08290 Cerdanyola del Vallès - Tel. 674581254 - info@proweb.com</p>
+				<p>Política de privacidad - Política de Cookies</p>
+			</div> <!-- Fin .copy -->
+		</div> <!-- fin .footer-inf -->
+		<div class="footer__logo order-1 mt-5 mb-md-4 order-lg-2"><a class="color-primary" href="../index.html">ProWeb</a></div>
+	</footer> <!-- Fin footer -->
+
+	<!-- Bootstrap JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/modernizr.js"></script>
+</body>
+
+</html>

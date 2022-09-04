@@ -1,0 +1,22 @@
+@use '../custom' as *;
+@use '../utils/mixins' as m;
+
+.webp {
+	#contacto {
+		.hero {
+			@include m.bgImage('../../assets/img/background-contacto.webp', $white-35);
+		}
+	}
+}
+
+.no-webp {
+	#contacto {
+		.hero {
+			@include m.bgImage('../../assets/img/background-contacto.jpg', $white-35);
+		}
+	}
+}
+
+textarea {
+	height: $font-size-base * 10;
+}

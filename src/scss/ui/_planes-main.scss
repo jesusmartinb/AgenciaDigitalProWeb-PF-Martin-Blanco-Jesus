@@ -1,0 +1,84 @@
+@use '../custom' as *;
+@use '../utils/mixins' as m;
+
+.webp {
+	#planes {
+		.hero {
+			@include m.bgImage('../../assets/img/background-planes.webp', $white-35);
+		}
+	}
+}
+
+.no-webp {
+	#planes {
+		.hero {
+			@include m.bgImage('../../assets/img/background-planes.jpg', $white-35);
+		}
+	}
+}
+
+.incluye {
+	min-height: 40rem;
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+
+		@include media-breakpoint-up(lg) {
+			min-height: 34.4rem;
+		}
+	}
+
+	li {
+		padding: 1rem 0;
+
+		&::before {
+			@include m.checked;
+		}
+	}
+}
+
+.incluyen {
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		padding: 1rem 0;
+
+		&::before {
+			@include m.checked;
+		}
+	}
+
+	h3 {
+		@include media-breakpoint-up(lg) {
+			text-align: center;
+		}
+	}
+
+	.incluido {
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			justify-content: space-evenly;
+		}
+	}
+}
+
+.proceso {
+	h3 {
+		margin-bottom: $font-size-base + 2.5;
+
+		@include media-breakpoint-up(lg) {
+			text-align: center;
+		}
+	}
+}
+
+.container {
+	@include media-breakpoint-up(xxl) {
+		max-width: 90%;
+	}
+}

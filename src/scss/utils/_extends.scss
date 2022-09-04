@@ -1,0 +1,41 @@
+@use '../custom' as *;
+@use '../utils/mixins' as m;
+
+%cards-ul {
+	display: flex;
+	padding: 0;
+}
+
+%columns {
+	padding: $font-size-base;
+
+	@include media-breakpoint-up(xl) {
+		padding: $font-size-base * 2.5;
+	}
+
+	@include m.pantallaMuyGrande {
+		padding: $font-size-base * 5;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	%punto {
+		content: "";
+		position: absolute;
+		top: -3px;
+		width: $font-size-base;
+		height: $font-size-base;
+		border-radius: 50%;
+		background-color: $azul;
+		z-index: 50;
+	}
+}
+
+%logo {
+	font-family: $headings-font-family;
+	font-size: $h2-font-size;
+	font-weight: $font-weight-bolder;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}

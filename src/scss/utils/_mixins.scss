@@ -1,0 +1,45 @@
+@use '../custom' as *;
+
+// Mixins sin parámetros
+@mixin slogan {
+	font-weight: $font-weight-bolder;
+	word-spacing: .5rem;
+	padding: $font-size-base * 0.5 0;
+	text-align: center;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+@mixin checked {
+	content: "✔";
+	margin-right: 1rem;
+	color: $success;
+}
+
+// Mixins con parámetros
+@mixin bgImage($url, $color) {
+	background-image: linear-gradient($color 0%, $color 100%), url($url);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top left;
+}
+
+@mixin card($height) {
+	width: 31rem;
+	overflow: hidden;
+	min-height: $height;
+}
+
+@mixin iconos($left) {
+	font-size: $font-size-base * 6;
+	position: absolute;
+	top: -30px;
+	left: $left;
+}
+
+// Mixins media queries personalizadas
+@mixin pantallaMuyGrande {
+	@media screen and (min-width: $pantallaMuyGrande) {
+		@content;
+	}
+}

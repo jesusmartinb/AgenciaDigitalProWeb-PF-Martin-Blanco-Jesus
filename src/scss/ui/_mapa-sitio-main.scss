@@ -1,0 +1,29 @@
+@use '../custom' as *;
+@use '../utils/mixins' as m;
+@use '../utils/maps' as map;
+
+#mapa {
+	.main {
+		a {
+			@include media-breakpoint-down(md) {
+				color: map-get(map.$blackscale, negro);
+			}
+		}
+		
+		ul {
+			li {
+				&:last-child {
+					margin-bottom: $font-size-base * 2;
+				}
+
+				ul {
+					padding-left: $font-size-base * 1.5;
+				}
+			}
+
+			.no-submenu {
+				margin-bottom: $font-size-base * 2;
+			}
+		}
+	}
+}

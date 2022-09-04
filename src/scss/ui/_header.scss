@@ -1,0 +1,144 @@
+@use "../custom" as *;
+@use "../utils/maps" as map;
+@use "../utils/extends";
+
+// Estilos Generales
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $font-size-root;
+}
+
+body {
+    font-size: $font-size-base;
+    background-color: map-get($colors, primary);
+}
+
+h1 {
+    font-size: $h1-font-size;
+    font-weight: $font-weight-bolder;
+    margin-top: $font-size-base * 2.5;
+}
+
+h2 {
+    font-size: $h2-font-size;
+    font-weight: $font-weight-bold;
+}
+
+h3 {
+    font-size: $h3-font-size;
+    font-weight: $font-weight-bold;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: $h4-font-size;
+    font-weight: $font-weight-lighter;
+}
+// Fin Estilos Generales
+
+/* Header */
+.position-fija {
+    @include media-breakpoint-up(md) {
+        position: fixed;
+        top: 6rem;
+        left: 0;
+        background-color: map-get(map.$blackscale, negro);
+        z-index: 9999;
+    }
+}
+
+.header__redes,
+.footer__redes {
+    .fab::before {
+        font-size: $font-size-base * 2;
+    }
+}
+
+.fa-linkedin {
+    color: #0a66c2;
+}
+
+.fa-instagram-square {
+    background: #f9ed32;
+    background: -moz-linear-gradient(45deg, #f9ed32 0%, #ee2a7b 68%, #ee2a7b 68%, #002aff 100%);
+    background: -webkit-linear-gradient(45deg, #f9ed32 0%, #ee2a7b 68%, #ee2a7b 68%, #002aff 100%);
+    background: linear-gradient(45deg, #f9ed32 0%, #ee2a7b 68%, #ee2a7b 68%, #002aff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9ed32', endColorstr='#002aff', GradientType=1);
+}
+
+.dropdown-menu {
+    --bs-dropdown-font-size: $font-size-base;
+}
+
+.navbar > .container-fluid {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    font-size: $font-size-base * 1.3;
+    z-index: 9999;
+    position: fixed;
+    border: 2px solid $dark;
+    background-color: map-get($colors, primary);
+}
+
+.nav-item:last-child {
+    @include media-breakpoint-up(md) {
+        margin-left: $font-size-base;
+    }
+}
+
+.nav-link {
+    display: inline-block;
+}
+
+.dropdown-toggle::after {
+    color: map-get(map.$blackscale, negro-55);
+    @include media-breakpoint-up(md) {
+        color: map-get($colors, primary);
+    }
+}
+
+.dropdown-toggle:hover::after {
+    transform: rotate(-90deg);
+    @include media-breakpoint-up(md) {
+        transform: none;
+    }
+}
+
+.navbar-expand-md {
+    .navbar-nav {
+        .dropdown-menu {
+            @include media-breakpoint-up(md) {
+                top: $font-size-base * 2;
+            }
+        }
+    }
+}
+
+.offcanvas {
+    --bs-offcanvas-width: 30.5rem;
+}
+
+.header__logo {
+    @include media-breakpoint-up(md) {
+        margin-right: 4rem;
+    }
+}
+
+.header__logo {
+    a {
+        @extend %logo;
+        color: map-get(map.$blackscale, negro);
+    }
+}
+
+.footer__logo {
+    a {
+        @extend %logo;
+        color: map-get($colors, primary);
+    }
+}

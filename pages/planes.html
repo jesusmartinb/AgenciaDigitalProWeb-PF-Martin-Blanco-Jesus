@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Agencia Web,Web,Planes Económicos,Precios">
+	<meta name="description" content="Compruebe lo que incluyen nuestros diferentes planes así como el proceso de gestión que seguimos con nuestros clientes">
+	<title>ProWeb - Planes Económicos Adaptados A Sus Necesidades</title>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/92d719d9ae.js" crossorigin="anonymous"></script>
+	<!-- Preload -->
+	<!-- Normalización de estilos o reseteo con Normalize -->
+	<link rel="preload" href="../assets/css/normalize.css" as="style">
+	<link rel="stylesheet" href="../assets/css/normalize.css">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Slab:wght@200;400;700;900&display=swap" crossorigin="crossorigin" as="font">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Slab:wght@200;400;700;900&display=swap" rel="stylesheet">
+	<!-- Estilos -->
+	<!-- <link rel="stylesheet" href="../assets/css/styles.css"> -->
+	<link rel="preload" href="../assets/css/main.css" as="style">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body id="planes" class="black d-grid">
+	<header class="pt-2 d-md-grid">
+		<div class="mt-5 mt-md-2 d-flex flex-column d-md-flex flex-md-row justify-content-center justify-content-md-between align-items-center align-items-md-center">
+			<div class="fs-3 ms-md-3">
+				<p>674581254 | info@proweb.com</p>
+			</div>
+			<div class="header__redes">
+				<i class="fab mb-4 me-3 fa-linkedin"></i>
+				<i class="fab mb-4 me-3 fa-twitter-square color-warning"></i>
+				<i class="fab mb-4 me-3 fa-instagram-square"></i>
+			</div> <!-- fin .header__redes -->
+		</div> <!-- fin .header__contacto -->
+		<div class="d-flex justify-content-between align-items-center px-4 position-fija">
+			<div class="header__logo d-flex justify-content-center justify-content-md-start ms-md-5">
+				<a class="black" href="../index.html">ProWeb</a>
+			</div> <!-- fin .header__logo-->
+			<nav class="navbar navbar-expand-md">
+				<div class="container-fluid">
+					<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="offcanvas offcanvas-start bgc-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+						<!-- <a class="navbar-brand" href="./index.html">ProWeb</a> -->
+						<div class="offcanvas-body">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<!-- <li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">ProWeb</a>
+							</li> -->
+								<li class="submenu nav-item dropdown">
+									<div class="btn-group navbar-btn">
+										<a class="black nav-link" href="agencia.html" role="button">Agencia</a>
+										<a href="" role="button" class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+											<span class="visually-hidden">Toggle Dropdown</span>
+										</a>
+										<ul class="children dropdown-menu bgc-primary">
+											<li><a class="dropdown-item" href="agencia.html#sobre">Sobre Nosotros</a></li>
+											<li><a class="dropdown-item" href="agencia.html#equipo">Equipo</a></li>
+											<li><a class="dropdown-item" href="agencia.html#nuevo">Nuevo Talento</a></li>
+										</ul> <!-- Fin submenú agencia -->
+									</div>
+								</li>
+								<li class="submenu nav-item dropdown">
+									<div class="btn-group navbar-btn">
+										<a class="black nav-link" href="servicios.html" role="button">Servicios</a>
+										<a href="" role="button" class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+											<span class="visually-hidden">Toggle Dropdown</span>
+										</a>
+										<ul class="children dropdown-menu bgc-primary">
+											<li><a class="dropdown-item" href="servicios.html#diseno">Diseño Web</a></li>
+											<li><a class="dropdown-item" href="servicios.html#desarrollo">Desarrollo Web</a></li>
+											<li><a class="dropdown-item" href="servicios.html#optimiza">Optimización</a></li>
+											<li><a class="dropdown-item" href="servicios.html#posicionamiento">Posicionamiento</a></li>
+											<li><a class="dropdown-item" href="servicios.html#publicidad">Publicidad</a></li>
+											<li><a class="dropdown-item" href="servicios.html#marketing">Marketing</a></li>
+										</ul><!-- Fin submenu servicios -->
+									</div>
+								</li>
+								<li class="submenu nav-item dropdown">
+									<div class="btn-group navbar-btn">
+										<a class="black nav-link" href="proyectos.html" role="button">Proyectos</a>
+										<a href="" role="button" class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+											<span class="visually-hidden">Toggle Dropdown</span>
+										</a>
+										<ul class="children dropdown-menu bgc-primary">
+											<li><a class="dropdown-item" href="proyectos.html#portfolio">Portfolio</a></li>
+											<li><a class="dropdown-item" href="proyectos.html#testimonios">Testimonios</a></li>
+										</ul><!-- Fin submenú proyectos -->
+									</div>
+								</li>
+								<li class="nav-item"><a class="black nav-link" href="planes.html">Planes</a></li>
+								<li class="nav-item"><a class="black nav-link" href="contacto.html">Contacto</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav> <!-- Fin navegación principal del header-->
+		</div>
+	</header> <!-- Fin header -->
+	<main class="main w-100">
+		<h1 class="text-center mb-5" id="cambio">Planes</h1>
+		<section id="planes" class="planes">
+			<div class="hero container-fluid mt-5">
+				<div class="trans row">
+					<div class="col-12">
+						<h2 class="text-center">Tenemos 4 Planes Web</h2>
+						<p class="slogan fs-3">Elige El Que Más Te Convenga</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="cards-planes content row">
+					<div class="card-planes col-12 col-lg-6">
+						<h2>Básico</h2>
+						<div class="content p-5 bgc-info">
+							<div class="precio">
+								<p>1600€ + IVA</p>
+							</div> <!-- Fin .precio -->
+							<div class="incluye">
+								<ul>
+									<li>Diseño gráfico original</li>
+									<li>Secciones ilimitadas</li>
+									<li>Categorización</li>
+									<li>Web móvil responsive</li>
+									<li>30 fotos premium</li>
+									<li>Integración redes sociales</li>
+									<li>Edición de los contenidos</li>
+									<li>Formación</li>
+								</ul>
+							</div> <!-- Fin .incluye -->
+							<div class="info">
+								<a class="btn btn--black" href="contacto.html">Obten Más Información Contactando Con Nosotros</a>
+							</div> <!-- Fin .info -->
+						</div> <!-- Fin .content -->
+					</div> <!-- Fin .card-planes -->
+					<div class="card-planes col-12 col-lg-6">
+						<h2>Estandar</h2>
+						<div class="content p-5 bgc-info">
+							<div class="precio">
+								<p>2000€ + IVA</p>
+							</div> <!-- Fin .precio -->
+							<div class="incluye">
+								<ul>
+									<li>Todo lo incluido en Plan Básico</li>
+									<li>Slogans más mensajes principales</li>
+									<li>Meta etiquetado lógico</li>
+									<li>Alta en Google Analytics</li>
+									<li>Alta en Google Maps</li>
+									<li>50 fotos premium</li>
+								</ul>
+							</div> <!-- Fin .incluye -->
+							<div class="info">
+								<a class="btn btn--black" href="contacto.html">Obten Más Información Contactando Con Nosotros</a>
+							</div> <!-- Fin .info -->
+						</div> <!-- Fin .content -->
+					</div> <!-- Fin .card-planes -->
+					<div class="card-planes col-12 col-lg-6">
+						<h2>Pro</h2>
+						<div class="content p-5 bgc-info">
+							<div class="precio">
+								<p>3000€ + IVA</p>
+							</div> <!-- Fin .precio -->
+							<div class="incluye">
+								<ul>
+									<li>Todo lo incluido en Plan Estandar</li>
+									<li>2 propuestas web diferentes</li>
+									<li>2 idiomas</li>
+									<li>Efectos y animaciones avanzados</li>
+									<li>Creación de perfiles sociales</li>
+									<li>Hasta 5 videos background</li>
+								</ul>
+							</div> <!-- Fin .incluye -->
+							<div class="info">
+								<a class="btn btn--black" href="contacto.html">Obten Más Información Contactando Con Nosotros</a>
+							</div> <!-- Fin .info -->
+						</div> <!-- Fin .content -->
+					</div> <!-- Fin .card-planes -->
+					<div class="card-planes col-12 col-lg-6">
+						<h2>Premium</h2>
+						<div class="content p-5 bgc-info">
+							<div class="precio">
+								<p>5000€ + IVA</p>
+							</div> <!-- Fin .precio -->
+							<div class="incluye">
+								<ul>
+									<li>Todo lo incluido en Plan Pro</li>
+									<li>Estrategia de Google Ads</li>
+									<li>Plan de redes sociales</li>
+									<li>Mail Marketing</li>
+									<li>Automatizaciones y productividad</li>
+									<li>Consultoría de negocio</li>
+								</ul>
+							</div> <!-- Fin .incluye -->
+							<div class="info">
+								<a class="btn btn--black" href="contacto.html">Obten Más Información Contactando Con Nosotros</a>
+							</div> <!-- Fin .info -->
+						</div> <!-- Fin .content -->
+					</div> <!-- Fin .card-planes -->
+				</div> <!-- Fin .cards-planes -->
+			</div>
+			<div class="incluyen content p-5">
+				<h3>Todas las opciones Incluyen</h3>
+				<div class="incluido">
+					<ul>
+						<li>Proyectos llava en mano</li>
+						<li>Adaptación a identidad corporativa</li>
+						<li>Instalación en tu servidor</li>
+					</ul>
+					<ul>
+						<li>Creación de cuentas de correo electrónico</li>
+						<li>Derechos de propiedad intelectual</li>
+						<li>Formularios de contacto</li>
+					</ul>
+				</div>
+			</div> <!-- Fin .incluyen -->
+			<div class="proceso content p-5">
+				<h3>Nuestro Proceso</h3>
+				<div class="cards-proceso d-flex flex-column flex-xl-row">
+					<div class="card-proceso d-flex flex-column justify-content-start align-items-center">
+						<div class="iconos">
+							<i class="far fa-circle"></i>
+							<i class="fas fa-credit-card"></i>
+						</div> <!-- Fin .iconos -->
+						<div class="contenido text-center mt-5">
+							<p>Haces el pedido con tarjeta, transferencia o PayPal</p>
+						</div> <!-- Fin .contenido -->
+					</div> <!-- Fin .card-proceso -->
+					<div class="card-proceso d-flex flex-column justify-content-start align-items-center">
+						<div class="iconos2">
+							<i class="far fa-circle"></i>
+							<i class="fab fa-wpforms"></i>
+						</div> <!-- Fin .iconos -->
+						<div class="contenido text-center mt-5">
+							<p>Rellenas el cuestionario que te enviamos</p>
+						</div> <!-- Fin .contenido -->
+					</div> <!-- Fin .card-proceso -->
+					<div class="card-proceso d-flex flex-column justify-content-start align-items-center">
+						<div class="iconos3">
+							<i class="far fa-circle"></i>
+							<i class="fas fa-tv"></i>
+						</div> <!-- Fin .iconos -->
+						<div class="contenido text-center mt-5">
+							<p>Los diseñadores desarrollan las propuestas y hacen las revisiones</p>
+						</div> <!-- Fin .contenido -->
+					</div> <!-- Fin .card-proceso -->
+					<div class="card-proceso d-flex flex-column justify-content-start align-items-center">
+						<div class="iconos4">
+							<i class="far fa-circle"></i>
+							<i class="fas fa-cog"></i>
+						</div> <!-- Fin .iconos -->
+						<div class="contenido text-center mt-5">
+							<p>Proyecto llave en mano, tú mismo podrás gestionarlo</p>
+						</div> <!-- Fin .contenido -->
+					</div> <!-- Fin .card-proceso -->
+				</div> <!-- Fin .cards-proceso -->
+			</div> <!-- Fin .proceso -->
+		</section> <!-- Fin section #planes -->
+	</main> <!-- Fin main -->
+	<footer class="footer d-flex flex-column justify-content-center text-center pt-lg-5 bgc-negro color-primary">
+		<div class="order-2 mb-4 order-lg-1 d-lg-flex justify-content-lg-around justify-content-xl-between">
+			<nav class="footer__menu d-none d-md-block">
+				<ul class="d-md-flex">
+					<li class="text-md-start pe-md-3"><a href="agencia.html">Agencia</a>
+						<ul class="d-md-block p-md-3 pe-md-4 ps-md-0">
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="agencia.html#sobre">Sobre Nosotros</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="agencia.html#equipo">Equipo</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="agencia.html#nuevo">Nuevo Talento</a></li>
+						</ul> <!-- Fin submenú agencia -->
+					</li>
+					<li class="text-md-start pe-md-3"><a href="servicios.html">Servicios</a>
+						<ul class="d-md-block p-md-3 pe-md-4 ps-md-0">
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="servicios.html#diseno">Diseño Web</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="servicios.html#desarrollo">Desarrollo Web</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="servicios.html#optimiza">Optimización</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="servicios.html#posicionamiento">Posicionamiento</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="servicios.html#publicidad">Publicidad</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="servicios.html#marketing">Marketing</a></li>
+						</ul> <!-- Fin submenú servicios -->
+					</li>
+					<li class="text-md-start pe-md-3"><a href="proyectos.html">Proyectos</a>
+						<ul class="d-md-block p-md-3 pe-md-4 ps-md-0">
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="proyectos.html#portfolio">Portfolio</a></li>
+							<li class="text-md-start pe-md-3 py-md-1 px-md-0"><a href="proyectos.html#testimonios">Testimonios</a></li>
+						</ul> <!-- Fin submenú proyectos -->
+					</li>
+					<li class="text-md-start pe-md-3"><a href="planes.html">Planes</a></li>
+					<li class="text-md-start pe-md-3"><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav> <!-- Fin navegacion principal del footer -->
+			<div class="footer__redes pe-xl-5">
+				<p class="footer__redes-siguenos my-5">Siguenos</p>
+				<i class="fab fa-linkedin ms-4 mb-4"></i>
+				<i class="fab fa-twitter-square ms-4 mb-4 color-warning"></i>
+				<i class="fab fa-instagram-square ms-4 mb-4 color-negro"></i>
+			</div> <!-- Fin .redes -->
+		</div> <!-- Fin .footer-sup -->
+		<div class="order-3 pb-lg-3">
+			<div class="mapa">
+				<nav class="d-block">
+					<ul class="d-flex justify-content-center p-2 list-unstyled">
+						<li><a class="color-primary" href="../pages/mapa-sitio.html">Mapa del Sitio</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="copy">
+				<p>ProWeb SL &reg; - Avd. Catalunya 39, 3º 4ª, 08290 Cerdanyola del Vallès - Tel. 674581254 - info@proweb.com</p>
+				<p>Política de privacidad - Política de Cookies</p>
+			</div> <!-- Fin .copy -->
+		</div> <!-- fin .footer-inf -->
+		<div class="footer__logo order-1 mt-5 mb-md-4 order-lg-2"><a class="color-primary" href="../index.html">ProWeb</a></div>
+	</footer> <!-- Fin footer -->
+
+	<!-- Bootstrap JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/modernizr.js"></script>
+</body>
+
+</html>

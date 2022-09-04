@@ -1,0 +1,20 @@
+@use "../custom" as *;
+@use "../utils/maps" as map;
+
+#error {
+	.main {
+		@include media-breakpoint-down(md) {
+			margin: $font-size-base * 2 0;
+			padding: 0 $font-size-base;
+
+			a {
+				color: map-get(map.$blackscale, negro);
+			}
+		}
+
+		@include media-breakpoint-up(md) {
+			margin: $font-size-base * 21 0;
+			padding: 0 $font-size-base;
+		}
+	}
+}
