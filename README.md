@@ -1,4 +1,4 @@
-# AgenciaDigitalProWeb-3PF-Martin-Blanco-Jesus
+# AgenciaDigitalProWeb-PF-Martin-Blanco-Jesus
 Trabajo del Curso de Desarrollo Web del Programa Carrera de Desarrollo Full Stack CoderHouse
 
 Para la correcta compilación se utiliza el script: 
@@ -19,6 +19,6 @@ Como parte de la tercera entrega del Proyecto Final se sube el sitio a un Servid
 
 Url Servidor Externo: https://profesionalweb.dev
 
-Url GitHub: https://github.com/jesusmartinb/AgenciaDigitalProWeb-3PF-Martin-Blanco-Jesus
+Url GitHub: https://github.com/jesusmartinb/AgenciaDigitalProWeb-PF-Martin-Blanco-Jesus
 
-Url GitHub Pages: https://jesusmartinb.github.io/AgenciaDigitalProWeb-3PF-Martin-Blanco-Jesus
+Url GitHub Pages: https://jesusmartinb.github.io/AgenciaDigitalProWeb-PF-Martin-Blanco-Jesus
