@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /src/
+Disallow: /.git/
+Disallow: /.gitignore
+Disallow: /gulpfile.js
+Disallow: /package-lock.json
+Disallow: /package.json
+Disallow: /README.md
+Sitemap: https://profesionalweb.dev/sitemap.xml
