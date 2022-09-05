@@ -28,6 +28,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<!-- reCAPTCHA v3 -->
+	<script src="https://www.google.com/recaptcha/api.js?render=6Ld1PdEhAAAAAFwTQ3fO1f0jAU1RdtAN77jwp-wt"></script>
 </head>
 
 <body id="agencia" class="black d-grid">
@@ -316,7 +318,7 @@
 				<div class="container-fluid">
 					<div class="row d-flex justify-content-center">
 						<div class="col-12">
-							<form class="form mx-xl-auto" action="" method="post" enctype="multipart/form-data">
+							<form id="form" class="form mx-xl-auto" action="form-post.php" method="post" enctype="multipart/form-data">
 								<div class="nom-tel">
 									<div>
 										<label class="form-label" for="nombre">Nombre</label>
@@ -355,7 +357,8 @@
 									<input type="file" id="cv" name="cv" placeholder="Selecciona archivo">
 								</div>
 								<div class="fila">
-									<input class="form-control" type="submit" value="Enviar Candidatura">
+									<!-- <input class="form-control" type="submit" value="Enviar Candidatura"> -->
+									<input type="submit" class="form-control" value="Enviar Candidatura">
 								</div>
 							</form>
 						</div>
@@ -422,6 +425,20 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 	<script src="../assets/js/main.js"></script>
 	<script src="../assets/js/modernizr.js"></script>
+	<script>
+		$('#form').submit(function (event) {
+			event.preventDefault();
+			grecaptcha.ready(function () {
+				grecaptcha.execute('6Ld1PdEhAAAAAFwTQ3fO1f0jAU1RdtAN77jwp-wt', {
+					action: 'registro'
+				}).then(function (token) {
+					$('#form').prepend('<input type="hidden" name="token" value="' + token + '">');
+					$('#form').prepend('<input type="hidden" name="action" value="registro">');
+					$('#form').unbind('submit').submit();
+				});
+			});
+		});
+	</script>
 </body>
 
 </html>
