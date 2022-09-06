@@ -27,7 +27,7 @@
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 	<!-- reCAPTCHA v3 -->
-	<script src="https://www.google.com/recaptcha/api.js?render=6Ld1PdEhAAAAAFwTQ3fO1f0jAU1RdtAN77jwp-wt"></script>
+	<script src="https://www.google.com/recaptcha/api.js?render=6LdAi9ghAAAAAPEvf6PEyOJ4NGkKlBi3k3TuxPdH6LdAi9ghAAAAAPEvf6PEyOJ4NGkKlBi3k3TuxPdH"></script>
 </head>
 
 <body id="contacto" class="black">
@@ -120,7 +120,7 @@
 			<div class="row content p-4">
 				<div class="col">
 					<h3 class="my-5 text-lg-center">Formulario de Contacto</h3>
-					<form id="form" class="form" action="form-post.php" method="post" enctype="text/plain">
+					<form id="form" class="form" action="form-postcontact.php" method="post" enctype="text/plain">
 						<div class="nom-ape">
 							<div>
 								<label for="nombre">Nombre <span class="color-danger">*</span></label>
@@ -227,7 +227,7 @@
 		$('#form').submit(function (event) {
 			event.preventDefault();
 			grecaptcha.ready(function () {
-				grecaptcha.execute('6Ld1PdEhAAAAAFwTQ3fO1f0jAU1RdtAN77jwp-wt', {
+				grecaptcha.execute('6LdAi9ghAAAAAPEvf6PEyOJ4NGkKlBi3k3TuxPdH', {
 					action: 'registro'
 				}).then(function (token) {
 					$('#form').prepend('<input type="hidden" name="token" value="' + token + '">');
