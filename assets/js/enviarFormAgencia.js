@@ -18,7 +18,6 @@ document.getElementById('form').addEventListener('submit', function (event) {
 	emailjs.sendForm(serviceID, templateID, this, 'WUVodRdv02zVPiGM2')
 		.then(() => {
 			btn.value = 'Enviar Candidatura';
-			alert('Enviado');
 			nombre.value = '';
 			telefono.value = '';
 			email.value = '';
@@ -26,18 +25,9 @@ document.getElementById('form').addEventListener('submit', function (event) {
 			actual.selectIndex = 0;
 			portfolio.value = '';
 			cv.value = '';
-			alert('Enviado correctamente');
-
-			// Swal.fire(
-			// 	'Consulta enviada',
-			// 	'A la brevedad nos comunicaremos',
-			// 	'success'
-			// )
 
 		}, (err) => {
 			btn.value = 'Enviar Candidatura';
 			alert(JSON.stringify(err));
 		});
 });
-
-// emailjs.init('');
