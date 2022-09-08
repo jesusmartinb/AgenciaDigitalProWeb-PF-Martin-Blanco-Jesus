@@ -18,11 +18,12 @@ document.getElementById('form').addEventListener('submit', function (event) {
 	emailjs.sendForm(serviceID, templateID, this, 'WUVodRdv02zVPiGM2')
 		.then(() => {
 			btn.value = 'Enviar Candidatura';
+			alert('Enviado');
 			nombre.value = '';
 			telefono.value = '';
 			email.value = '';
 			vacante.value = '';
-			actual.value = '';
+			actual.selectIndex = 0;
 			portfolio.value = '';
 			cv.value = '';
 			alert('Enviado correctamente');
