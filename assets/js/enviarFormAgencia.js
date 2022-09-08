@@ -24,7 +24,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
 			vacante.value = '';
 			actual.value = '';
 			portfolio.value = '';
-			cv.value = '';
+			// cv.value = '';
 
 			// Swal.fire(
 			// 	'Consulta enviada',
@@ -33,7 +33,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
 			// )
 
 		}, (err) => {
-			btn.value = 'Enviar';
+			btn.value = 'Enviar Candidatura';
 			alert(JSON.stringify(err));
 		});
 });
