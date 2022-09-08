@@ -1,11 +1,11 @@
 const btn = document.getElementById('button');
-const nombre = document.getElementById('nombre');
-const telefono = document.getElementById('tel');
-const email = document.getElementById('email');
-const vacante = document.getElementById('vacante');
-const actual = document.getElementById('actual');
-const portfolio = document.getElementById('portfolio');
-const cv = document.getElementById('cv');
+// const nombre = document.getElementById('nombre');
+// const telefono = document.getElementById('tel');
+// const email = document.getElementById('email');
+// const vacante = document.getElementById('vacante');
+// const actual = document.getElementById('actual');
+// const portfolio = document.getElementById('portfolio');
+// const cv = document.getElementById('cv');
 
 document.getElementById('form').addEventListener('submit', function (event) {
 	event.preventDefault();
@@ -18,13 +18,13 @@ document.getElementById('form').addEventListener('submit', function (event) {
 	emailjs.sendForm(serviceID, templateID, this)
 		.then(() => {
 			btn.value = 'Enviar Candidatura';
-			nombre.value = '';
-			telefono.value = '';
-			email.value = '';
-			vacante.value = '';
-			actual.selectIndex = 0;
-			portfolio.value = '';
-			cv.value = '';
+			// nombre.value = '';
+			// telefono.value = '';
+			// email.value = '';
+			// vacante.value = '';
+			// actual.selectIndex = 0;
+			// portfolio.value = '';
+			// cv.value = '';
 
 			// Swal.fire(
 			// 	'Consulta enviada',
