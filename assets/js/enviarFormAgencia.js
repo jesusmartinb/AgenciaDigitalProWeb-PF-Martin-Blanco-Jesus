@@ -22,9 +22,9 @@ document.getElementById('form').addEventListener('submit', function (event) {
 			telefono.value = '';
 			email.value = '';
 			vacante.value = '';
-			// actual.value = '';
+			actual.selectIndex = 0;
 			portfolio.value = '';
-			// cv.value = '';
+			cv.value = '';
 
 			// Swal.fire(
 			// 	'Consulta enviada',
