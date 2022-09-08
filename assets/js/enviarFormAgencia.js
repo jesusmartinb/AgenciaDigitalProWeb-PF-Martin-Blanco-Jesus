@@ -22,7 +22,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
 			telefono.value = '';
 			email.value = '';
 			vacante.value = '';
-			actual.value = '';
+			// actual.value = '';
 			portfolio.value = '';
 			// cv.value = '';
 
