@@ -15,10 +15,8 @@ Purga de CSS con:
 
 Para la minificación de las imágenes de la carpeta "`src/img`" y la posterior conversion a formato webp y avif usar el comando "`npx gulp imagenes`".
 
-Como parte de la tercera entrega del Proyecto Final se sube el sitio a un Servidor Externo.
+Como parte de la entrega del Proyecto Final se sube el sitio a un Servidor Externo.
 
 Url Servidor Externo: https://profesionalweb.dev
 
 Url GitHub: https://github.com/jesusmartinb/AgenciaDigitalProWeb-PF-Martin-Blanco-Jesus
-
-Url GitHub Pages: https://jesusmartinb.github.io/AgenciaDigitalProWeb-PF-Martin-Blanco-Jesus
