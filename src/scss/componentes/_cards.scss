@@ -1,8 +1,10 @@
-@use '../custom' as *;
-@use '../utils/mixins' as m;
+@use "../custom" as *;
+@use "../utils/mixins" as m;
 
 /* Cards equipo - Cards Animaciones*/
 .card {
+	z-index: -1;
+
 	@include m.card(57rem);
 
 	img {
@@ -103,17 +105,16 @@
 
 	.content {
 		border: 2px solid $grey-a;
-    border-radius: 1rem;
-    max-width: 38.5rem;
+		border-radius: 1rem;
+		max-width: 38.5rem;
 	}
 
 	.precio {
 		font-size: $font-size-base * 1.6;
-    font-weight: $font-weight-normal;
-    font-style: oblique;
+		font-weight: $font-weight-normal;
+		font-style: oblique;
 	}
 }
-
 
 /* Cards Proceso */
 .cards-proceso {
@@ -133,7 +134,7 @@
 	.iconos4 {
 		position: relative;
 	}
-	
+
 	.iconos {
 		i {
 			&:first-child {

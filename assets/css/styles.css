@@ -11343,6 +11343,7 @@ textarea.form-control-lg {
 }
 /* Cards equipo - Cards Animaciones*/
 .card {
+  z-index: -1;
   width: 31rem;
   overflow: hidden;
   min-height: 57rem;
@@ -11611,7 +11612,7 @@ h4 {
 
 /* Header */
 @media (min-width: 768px) {
-  .position-sticky {
+  .posicion-sticky {
     position: sticky;
     top: 0;
     left: 0;

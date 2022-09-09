@@ -40,7 +40,7 @@ h4 {
 // Fin Estilos Generales
 
 /* Header */
-.position-sticky {
+.posicion-sticky {
     @include media-breakpoint-up(md) {
         position: sticky;
         top: 0;
