@@ -11611,11 +11611,12 @@ h4 {
 
 /* Header */
 @media (min-width: 768px) {
-  .position-fija {
-    position: fixed;
-    top: 6rem;
+  .position-sticky {
+    position: sticky;
+    top: 0;
     left: 0;
     background-color: #000000;
+    color: aliceblue;
     z-index: 9999;
   }
 }

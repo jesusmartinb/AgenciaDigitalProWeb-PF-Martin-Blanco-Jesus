@@ -40,12 +40,13 @@ h4 {
 // Fin Estilos Generales
 
 /* Header */
-.position-fija {
+.position-sticky {
     @include media-breakpoint-up(md) {
-        position: fixed;
-        top: 6rem;
+        position: sticky;
+        top: 0;
         left: 0;
         background-color: map-get(map.$blackscale, negro);
+        color: map-get($colors, primary);
         z-index: 9999;
     }
 }
