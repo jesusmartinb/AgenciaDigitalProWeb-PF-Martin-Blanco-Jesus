@@ -1795,10 +1795,6 @@ textarea.form-control {
   display: none !important;
 }
 
-.position-sticky {
-  position: sticky !important;
-}
-
 .w-100 {
   width: 100% !important;
 }
@@ -2286,7 +2282,7 @@ textarea.form-control {
 /* Animación de degradado */
 .planes:not(.trans),
 #contacto .row {
-  background: linear-gradient(45deg, #007d81, #0075b9, #00ff5e);
+  background: linear-gradient(45deg, #00f7ff, #00a2ff, #00ff5e);
   animation: AnimacionDegradado 10s ease-in-out infinite;
   background-size: 600% 600%;
 }
